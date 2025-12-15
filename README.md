@@ -2,15 +2,15 @@
 
 ### Select Dropdowns
 
-![Home Page](screenshots/screenshot3.png)
+![Home Page](screenshots/Screenshot_3.jpg)
 
 ### Single Select
 
-![Dashboard](screenshots/screenshot2.png)
+![Dashboard](screenshots/Screenshot_2.jpg)
 
 ### Multi Select
 
-![Settings](screenshots/screenshot3.png)
+![Settings](screenshots/Screenshot_1.jpg)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

@@ -1,42 +1,218 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f7f9fd;
+  color: #323440;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+input,
+select,
+button {
+  font-family: Lexend Deca, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  color: #323440;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.pxs_custom_select {
+  position: relative;
+  width: 100%;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.pxs_search_select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.pxs_search_select > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pxs_search_select > p span {
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.pxs_search_select .placeholder {
+  color: #afacc1;
+}
+
+.pxs_search_input,
+.pxs_select_dropdown {
+  background: #fff;
+  border-radius: 6px;
+}
+
+.pxs_select_dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #d6d3e5;
+  z-index: 10;
+}
+
+.pxs_search_input {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px;
+  width: calc(100% - 20px) !important;
+  min-height: 44px;
+  border: 1px solid #d6d3e5;
+  padding: 0 20px;
+}
+
+.pxs_select_dropdown ul {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.pxs_select_dropdown li {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pxs_select_dropdown li:hover {
+  background: #ebf3f8;
+}
+
+.pxs_multi_selected {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pxs_multi_selected li {
+  background: linear-gradient(
+    90deg,
+    #4f5fd01a 0%,
+    #ce2b921a 55.31%,
+    #e53d5e1a 100.57%
+  );
+  border-radius: 5px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 30px 5px 5px;
+  display: flex;
+  position: relative;
+}
+
+.pxs_multi_selected li button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4057;
+  border-radius: 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pxs_multi_selected li button svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.pxs_main_input input,
+.pxs_main_input select,
+.pxs_search_select {
+  background: #fff;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 44px;
+  padding: 5px 15px;
+  position: relative;
+  border: 1px solid #e7ecfb !important;
+}
+
+.pxs_rows_select {
+  display: flex;
+  min-width: fit-content;
+  white-space: nowrap;
+  gap: 5px;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+  border: 1px solid #dceaf3 !important;
+  border-radius: 6px;
+}
+
+.pxs_rows_select select {
+  min-height: 42px;
+  padding-right: 15px;
+  border: none !important;
+}
+
+.pxs_page_title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.pxs_page_title h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.pxs_page_title_inner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }

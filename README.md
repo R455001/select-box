@@ -1,3 +1,17 @@
+## Screenshots
+
+### Select Dropdowns
+
+![Home Page](screenshots/screenshot3.png)
+
+### Single Select
+
+![Dashboard](screenshots/screenshot2.png)
+
+### Multi Select
+
+![Settings](screenshots/screenshot3.png)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
